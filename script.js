@@ -6,6 +6,8 @@ const theResult = document.getElementById("theResult");
 
 let oppPick = Math.floor(Math.random() * 31);
 
+const winningText = " You WIN! 🎉🎉🎉";
+
 
 
 
@@ -14,17 +16,17 @@ function rock() {
     let playersResult = "rock"
     let oppResult = " "
 yourChoice.innerText = "You Choose:";
-yourChoice.innerText += " ROCK!";
+yourChoice.innerText += " ROCK! 🪨";
 oppChoice.innerText = "Opponent Chooses:";
 let oppPick = Math.floor(Math.random() * 3 + 1);
 if (oppPick === 1) {
-    oppChoice.innerText += " ROCK!"
+    oppChoice.innerText += " ROCK! 🪨"
     oppResult = "rock"
 } else if (oppPick === 2) {
-    oppChoice.innerText += " PAPER!"
+    oppChoice.innerText += " PAPER! 📃"
     oppResult = "paper"
 } else {
-    oppChoice.innerText += " SCISSORS!"
+    oppChoice.innerText += " SCISSORS! ✂️"
     oppResult = "scissors"
 }
 
@@ -36,7 +38,7 @@ if (oppResult === "rock" ){
     theResult.innerText += " You Lose!"
     } else {
         theResult.innerText = "Result:"
-        theResult.innerText += " You WIN!" 
+        theResult.innerText += winningText
     }
 
 
@@ -47,23 +49,23 @@ function paper() {
     let playersResult = "paper"
     let oppResult = " "
     yourChoice.innerText = "You Choose:";
-    yourChoice.innerText += " PAPER!";
+    yourChoice.innerText += " PAPER! 📃";
     oppChoice.innerText = "Opponent Chooses:";
 let oppPick = Math.floor(Math.random() * 3 + 1);
 if (oppPick === 1) {
-    oppChoice.innerText += " ROCK!"
+    oppChoice.innerText += " ROCK! 🪨"
     oppResult = "rock"
 } else if (oppPick === 2) {
-    oppChoice.innerText += " PAPER!"
+    oppChoice.innerText += " PAPER! 📃"
     oppResult = "paper"
 } else {
-    oppChoice.innerText += " SCISSORS!"
+    oppChoice.innerText += " SCISSORS! ✂️"
     oppResult = "scissors"
 }
 
 if (oppResult === "rock" ){
     theResult.innerText = "Result:"
-    theResult.innerText += " You WIN!"
+    theResult.innerText += winningText
 } else if (oppResult === "paper"){
     theResult.innerText = "Result:"
     theResult.innerText += " Draw!"
@@ -77,17 +79,17 @@ function scissors() {
     let playersResult = "scissors"
     let oppResult = " "
     yourChoice.innerText = "You Choose:";
-    yourChoice.innerText += " SCISSORS!";
+    yourChoice.innerText += " SCISSORS! ✂️";
     oppChoice.innerText = "Opponent Chooses:";
 let oppPick = Math.floor(Math.random() * 3 + 1);
 if (oppPick === 1) {
-    oppChoice.innerText += " ROCK!"
+    oppChoice.innerText += " ROCK! 🪨"
     oppResult = "rock"
 } else if (oppPick === 2) {
-    oppChoice.innerText += " PAPER!"
+    oppChoice.innerText += " PAPER! 📃"
     oppResult = "paper"
 } else {
-    oppChoice.innerText += " SCISSORS!"
+    oppChoice.innerText += " SCISSORS! ✂️"
     oppResult = "scissors"
 }
 
@@ -96,7 +98,7 @@ if (oppResult === "rock" ){
     theResult.innerText += " You Lose!"
 } else if (oppResult === "paper"){
     theResult.innerText = "Result:"
-    theResult.innerText += " You WIN!"
+    theResult.innerText += winningText
     } else {
         theResult.innerText = "Result:"
         theResult.innerText += " Draw!" 
